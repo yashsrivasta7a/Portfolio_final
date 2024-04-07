@@ -54,6 +54,7 @@ body {
   background-image: url(./Artboard\ 1.png);
   background-size: 100%;
   margin: 1rem;
+  
   background-repeat: no-repeat;
   padding-top: 6px;
   background-color: #1e0044;
@@ -272,6 +273,7 @@ flex-direction: row;
 }
 #edu {
   margin: 1rem 0rem 1rem 0rem;
+  
   background-image: linear-gradient(#421977, #1e0044);
   border-radius: 20px ;
   height:fit-content;
@@ -285,8 +287,7 @@ flex-direction: row;
 #edu h1{
   padding-top: 30px;
   padding-bottom: 0px;
-  padding-left: 27rem;
-  align-items: center;
+  padding-left: 32%;
   background: -webkit-linear-gradient(#9c2ef5, #e9deff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -315,12 +316,15 @@ hr{
   top: 90px;
   z-index: 1;
 }
-#techno{
-  margin: 1rem 25rem;
+.techno{
+  /* margin: 1rem 27%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(#421977, #1e0044);
-  border-radius: 0x  ;
+  border-radius: 20px ;
   height:fit-content;
-  width: fit-content;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -342,6 +346,9 @@ transition: .3s;
   
 }
 @media screen and (max-width:426px) {
+  *{
+    margin: 0rem 0rem 0rem 0rem;
+  }
   #techno{
     margin: 0px;
     width: 100%;
@@ -368,7 +375,7 @@ transition: .3s;
   }
   .minicard{
     text-align: center;
-    width: 100%;
+    width: 90%;
     padding: 1rem;
     margin: 1rem 0rem;
   }
@@ -388,7 +395,7 @@ text-align: justify;
   padding: 1rem;
   background-size: cover;
   margin: 0rem;
-  width: 100%;
+  width: 90%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -413,11 +420,10 @@ text-align: justify;
     flex-direction: column;
     align-items: center;
     margin: 0px;
-    width: 92vw;    height: 150vh;
+    width: 92vw;    height: 167vh;
   }
   #aboutme p{
     padding: 0px;
-
     width: 90%;
     margin: 1rem;
     word-spacing: 0px;
@@ -431,33 +437,32 @@ text-align: justify;
     align-items: center;
   }
   .icodiv {
-    align-content: center;
+  margin-top: 34rem;
+  margin-left: 21.5rem;
     padding: 0px;
     flex-direction: row;
     gap: 4rem;
   }
   .pfp{
-    margin-top: 1rem;
-    width: 90%;
+    
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .pfp img{
-    width: 80%;
+    border-radius: 0px;
+    width: 90%;
   }
   .about-text{
     text-align: center;
-
     width: 100%;
   }
   .about-text p{
     width: 100%;
     text-align: justify;
   }
-  body{
-    margin: 1rem;
-  }
+ 
   .normal {
     padding: 5px;
     position: absolute;
@@ -486,4 +491,5 @@ text-align: justify;
   .tech{
     flex-wrap: wrap;
   }
+
 }
